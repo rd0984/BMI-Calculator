@@ -1,0 +1,123 @@
+/* Reset default margin/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: rgb(208, 208, 208);
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 40px;
+    background-color: black;
+    color: white;
+  }
+  
+  /* Section centers only the form & result */
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+  }
+  
+  #container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    font-size: 20px;
+    width: 600px;
+    margin-top: 50px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+  
+  form input {
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  button#submitBtn {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+  }
+  
+  button#submitBtn:hover {
+    background-color: #333;
+  }
+  
+  /* Result stays centered below form */
+  #result {
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+    max-width: 600px;
+  }
+  
+  /* === HISTORY SECTION === */
+  
+  /* Full-width wrapper that breaks out of section centering */
+  #history-wrapper {
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  
+  /* Left-aligned container for table */
+  #history {
+    width: 100%;
+    text-align: left;
+  }
+  
+  /* Table styling */
+  .history-table {
+    width: 100%;
+    max-width: 1500px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .history-table th,
+  .history-table td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .history-table thead {
+    background-color: black;
+    color: white;
+  }
+  
+  .history-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
